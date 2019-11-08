@@ -1,0 +1,48 @@
+========Features========
+-Search for recipes via
+ -Food type
+ -Ingredients
+ -Quantity Fed
+ -Ethnicity
+ -Tracked searches (search history)
+ -Equipment (grill, microwave..) 
+
+-Display a recipe in a standardized format
+ -Pictures of cards, napkins, Magizines
+ -user inputted (straight up text boxes)
+ 
+-Scalability(double/half recipes)
+
+-Recipe of the day
+
+-Annotations
+
+-Substitutions (food allergies)
+
+-Related Recipes
+
+-Unit conversions
+
+-Photo Gallery (ingredienta/prep, how to cook, finished plating)
+
+-Stats
+ -Calories
+ -Cost
+ -Time to create (prep,cook,post)
+ -Yield (feeds a Baby->Horse->Solves World Hunger)
+ 
+ -Video game recipes? (minecraft)
+ 
+ -VR ready (Practice Cooking ;) )
+ ========User Stories=======
+ 
+ 
+ As a user I want to be able to:
+ -declare my cooking knowledge/expertise (beginner, intermediate, Gordon Ramsay) at the beginning 
+ -take pictures of recipes so I don't have to type them in (live OCR)
+ -Attach pictures to ingredients, steps, tools and final outputs/products so that I can visually follow along
+ -Export/Import recipes to share them with others
+ -Convert between standard units (cups|ml, F|C) so that i can adapt recipes to my kitchen
+ -test my knowledge/expertise next time I cook.
+ -keep track of receipes I've made
+ -mark recipes as a 'Favorite' so that I can easily find recipes that I liked

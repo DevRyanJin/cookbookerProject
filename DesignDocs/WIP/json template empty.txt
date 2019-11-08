@@ -1,0 +1,51 @@
+{
+	"recipeName": "recipe name",
+
+	"ingredientList": [
+	    {
+			"name": "section name 1",
+            "list": [{
+                    "amount": 1,
+                    "unit": "unit name",
+                    "substance": "ingredient 1"
+                },
+                {
+                    "amount": 2.3,
+                    "unit": "unit name",
+                    "substance": "ingredient 2"
+                }
+            ]
+		},
+		{
+			"name": "section name 2",
+			"list": [{
+					"amount": 1,
+					"unit": "unit name",
+					"substance": "ingredient 1"
+				},
+				{
+					"amount": 2.3,
+					"unit": "unit name",
+					"substance": "ingredient 2"
+				}
+			]
+		},
+
+	],
+
+	"instructionList": [
+	    {
+			"name": "Section name",
+			"list": [
+				"instruction 1",
+				"instruction 2"
+			]
+		}
+
+	],
+
+	"tags": [
+        "tag1",
+        "tag2"
+	]
+}

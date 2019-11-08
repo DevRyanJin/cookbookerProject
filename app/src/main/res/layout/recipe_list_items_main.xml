@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Creation of this document was done by following a guide:
+    https://github.com/codepath/android_guides/wiki/Using-the-RecyclerView-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_background"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/recipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transBlue"
+        android:fontFamily="cursive"
+        android:maxHeight="50dp"
+        android:minHeight="30dp"
+        android:text="@+id/recipe_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:duplicateParentState="true"
+        tools:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/recipe_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@+/recipe_id"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:duplicateParentState="true"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookbooker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gud_eats"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".presentation.EditRecipeActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".presentation.ShoppingListActivity"
+            android:label="@string/title_activity_shopping_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".presentation.RecipeActivity" />
+    </application>
+
+</manifest>

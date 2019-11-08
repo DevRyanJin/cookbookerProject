@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CookBooker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CookBooker</string>
+    <string name="nav_header_subtitle">Collections of recipes</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="background_image">Background Image</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="direction_label">Directions</string>
+    <string name="title_activity_shopping_list">Shopping Cart</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search Recipes</string>
+    <string name="recipe_of_the_day_label">Find a Random Recipe!</string>
+    <string name="shopping_list_label">Shopping List</string>
+    <string name="new_recipe_label">New Recipe</string>
+    <string name="communicate_label">Communicate</string>
+    <string name="share_label">Share Recipes</string>
+    <string name="recipe_id">cookbooker_recipe_id</string>
+    <string name="shopping_list_query">cookbooker_shopping_list_query</string>
+    <string name="fatalError">Fatal error</string>
+    <string name="warning">Warning</string>
+    <string name="info">Information</string>
+    <string name="title_activity_edit_recipe">EditRecipeActivity</string>
+    <string name="RecipeOfTheDay_banner">(Insert Recipe of the Day Banner here)</string>
+    <string name="daily_recipe_btn">(Click here to view recipe)</string>
+    <string name="edit_recipe">Edit Recipe</string>
+</resources>

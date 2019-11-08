@@ -1,0 +1,14 @@
+<resources>
+    <string name="hello">Spinner Example</string>>
+
+    <string-array name="metrics_string">
+        <item></item>>
+        <item>cup</item>>
+        <item>ml</item>>
+        <item>oz</item>>
+        <item>tsp</item>>
+        <item>tbsp</item>>
+        <item>g</item>>
+        <item>ABigFatFootLong</item>>
+    </string-array>
+</resources>

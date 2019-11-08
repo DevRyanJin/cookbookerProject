@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--
+ * 
+ * Code was pulled and mutated from a demo to fit our needs by James Tully.
+ * https://tympanus.net/codrops/2019/02/27/text-trail-effect/
+ * 
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2019, Codrops
+ * http://www.codrops.com
+-->
+
+
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coookbooker</title>
+	<meta name="description" content="Collections of Recipes" />
+	<meta name="keywords" content="text, trail, copy, brutalism, effect, slideshow, animation, javascript" />
+	<meta name="author" content="James Tully" />
+	<link rel="shortcut icon" href="cookbooker.ico">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:500,900|Syncopate:700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-5 loading">
+	<main>
+		<div class="frame">
+			<!-- Add content here-->
+			<div class="">
+				<!--Top Left-->
+				<a href="#Top_Of_Werds" onclick="toggleIn('About')">About</a><br />
+				<a href="#Top_Of_Werds" onclick="toggleIn('Demo')">Demo</a><br />
+				<a href="#Top_Of_Werds" onclick="toggleIn('Retrospective')">Retrospective</a><br />
+			</div>
+			<!-- Top Center Right-->
+			<div class="frame__links">
+				<!-- Bottom Left-->
+				Collections of Recipes
+			</div>
+		</div>
+		<div class="content">
+			<div class="content__slide">
+				<div class="content__img content__img--full">
+					<div class="content__img-inner" style="background-image: url(img/MainActivity.png);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">MainScreen</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">MainScreen</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Cookbooker</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">MainScreen</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">MainScreen</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">MainScreen</span>
+					</span>
+				</div>
+			</div>
+			<div class="content__slide">
+				<div class="content__img content__img--full">
+					<div class="content__img-inner" style="background-image: url(img/RecipeActivity.png);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">FullRecipes</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">FullRecipes</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Cookbooker</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">FullRecipes</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">FullRecipes</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">FullRecipes</span>
+					</span>
+				</div>
+			</div>
+			<div class="content__slide">
+				<div class="content__img content__img--full">
+					<div class="content__img-inner" style="background-image: url(img/ShoppingList.png);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">ShoppingList</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">ShoppingList</span>
+					</span>
+					<span class="content__text content__text--full ">
+						<span class="content__text-inner content__text-inner--stroke">Cookbooker</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">ShoppingList</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">ShoppingList</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">ShoppingList</span>
+					</span>
+				</div>
+			</div>
+			<div class="content__slide">
+				<div class="content__img content__img--full">
+					<div class="content__img-inner" style="background-image: url(img/EditRecipe.png);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">EditRecipe</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">EditRecipe</span>
+					</span>
+					<span class="content__text content__text--full ">
+						<span class="content__text-inner content__text-inner--stroke">Cookbooker</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">EditRecipe</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">EditRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">EditRecipe</span>
+					</span>
+				</div>
+			</div>
+			<div class="content__slide">
+				<div class="content__img content__img--full">
+					<div class="content__img-inner" style="background-image: url(img/RandomRecipe.png);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">RandomRecipe</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">RandomRecipe</span>
+					</span>
+					<span class="content__text content__text--full ">
+						<span class="content__text-inner content__text-inner--stroke">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">RandomRecipe</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">RandomRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">DailyRecipe</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">RandomRecipe</span>
+					</span>
+				</div>
+			</div>
+			<nav class="content__nav">
+				<button id="prevButton" class="content__nav-button content__nav-button--prev">Prev</button>
+				<button id="nextButton" class="content__nav-button content__nav-button--next">Next</button>
+			</nav>
+		</div>
+	</main>
+	<div id="Top_Of_Werds"></div>
+	
+	<div class="werds" id="About" style="display:none;">
+		<h1>Our Vision</h1>
+			CookBooker is a recipe collection for people who want to follow recipes in order to prepare and consume decent food. The CookBooker system will be used to assist those that wish to follow step by step instructions, producing various dishes. It can equally be used by those that are already relatively familiar with some recipe but require a reminder to the steps, ingredients or other attributes related to a recipe.
+			<br />
+			The system can display any type of recipe in a simple to understand layout which will allow cooks to quickly read recipes without being burdened by deciphering them. This also allows cooks to easily move between recipes and find certain aspects where they expect them to be. We hope to be able to speed up food preparation and enhance the overall joy of creation for the cook.
+			<br />
+			The beauty of Cookbooker is that it is simple enough for beginner cooks and chefs to use, yet, also meets the needs of experienced chefs by including features allowing them to expand on existing recipes. This broad scope of included skill levels allows our system to be used in a wide market and does not need to be targeted to any specific user.
+			<br />
+			Cookbooker is rich in features including, but not limited to; sharing of recipes so cooks can distribute them to colleagues, friends, and family. Unit conversions, so recipes shared from different cultures may be recreated using measurements that the cook is comfortable with authoring of the chef or cook's own original creations. Cookbooker does not merely allow cooks to learn new recipes and refine others but encourages exploration in the vast world of food. That is to say, CookBooker's aim is to easily make available for its users the ability to retrieve recipes using the system; in addition, cooks and chefs are able to share and communicate effectively using built-in features.
+			<br />
+			Making CookBooker user-friendly, easily and readily available to you, the cook is important to us. Therefore, the system is envisioned as a mobile application to support you as a cook or chef to work hand in hand with the system. The system is also anticipated to expand its capability to support and work under multiple devices.
+			<br />
+			Furthermore, Cookbooker will allow for investigation within different cultures and culinary styles. Cooks will be able to alter recipes as they please, discovering extra ingredients or substitutions on their own, or take suggestions from the app to put new twists on old classics and discover the ultimate dish. This fosters creativity in the cooks when they're preparing foodstuffs and allows them to develop their own personal style.
+			<br />
+			The system may be considered a success once cooks are observed surpassing the following criteria. To begin with, they must be able to prepare food more efficiently after prolonged use of the system, this may be observed by using timed, within-subject testing. Second, they must prepare food they are familiar with to a higher quality than they used to. Metrics may include presentation, taste, and closeness to the dish they were looking to replicate. Third, they must be able to re-imagine and re-create recipes based on limited resources both in ingredients and with some monetary budget. And finally, if any of the previous three criteria were attained using some other cook's annotations, we will consider Cookbooker a successful product.
+	
+		<h1>Features and Functionality</h1>
+			Running the app you will be greeted by our three default recipes. To view the details pertaining to a specific recipe simply click on the one which interests you. If you notice something you wish to edit, in the top right corner is an edit button which allows you to change the recipe.
+			<br />
+			If you would like to instead add a brand new recipe, simply open the menu on the main page and select New Recipe, enter your recipe details and click the save button in the top right corner.
+			<br />
+			If you get to the point of too many recipes and need to find a specific one, be sure to make use of the search functionality in the main menu.
+			<br />
+			If you are just unsure of what you want to eat, check out the Random Recipe in the main menu.
+			<br />
+			If you want to go shopping be sure to use our shopping list, where you can check off certain items.
+			<br />
+			A hidden feature is in the shopping list where you can enter the contents of your fridge into the shopping list and search for recipes which contain the selected ingredients!
+		<h1><i>Marketable Audience</i></h1>
+		CookBooker is a recipe collection for people who want to follow recipes in order to prepare and consume decent food.
+
+	<h1>Contributors</h1>
+		<ul>
+			<li><h3>James Tully [Design Wizard]</h3></li>
+			<li><h3>Marshall Jackson [Master of Data]</h3></li>
+			<li><h3>(Ryan) Sijin Lee [Test Taskmaster]</h3></li>
+			<li><h3>Devon Li [UX Expert]</h3></li>
+			<li><h3>Paolo Gio [Jack of All Trades]</h3></li>
+		</ul>
+	</div>
+
+	<div class="werds" id="Demo" style="display:none;text-align: center">
+		<h1>Demo Video</h1>
+		<video id="demoVideo" controls muted loop="true">
+			<source src="img/CookbookerDemoV1.webm" type="video/webm">
+			Your browser does not support <a href="img/CookbookerDemoV1.webm">this video format</a>.
+		</video>
+	</div>
+
+	<div class="werds" id="Retrospective" style="display:none;">
+		<h1>Post-Mortem</h1>
+		01)The overall architecture of the project started off as a 3-Tier and stayed that way right through production to the end.<br />
+		<br />
+		02)Some things that went quite well during the development process were:
+		<ul>
+			<li>Division of work. Everyone had their own responsabilites to hold (whether it was a whole tier of the architecture or a specific user story) and any time there was any need for information to flow from one bit to another there was a high level discussion about what would work best for all.</li>
+			<li>The 3-Tier architecture felt like it fit the problem we were attempting to solve well, so most things that came up were easily and quickly categorized and given concrete responsabilities.</li>
+			<li>There was always a clear direction and goal in sight. If someone was able to complete their tasks early and were looking for more there was always something available to bite into that would further the project.</li>
+		</ul><br />
+		03)Some things that didn't quite go as well as hoped over the production lifespan were:
+		<ul>
+			<li>Communication issues, specifically in the department of availability. Mostly we like to rag on Slack but it was mostly an issue of when people were available to work during the days. This group was quite split with members working into the wee hours of the morning and others getting up and working before dawn.</li>
+			<li>While Android Studio is powerful and very well documented it was a completely new ecosystem for the team, there were many things to get used to and often there were issues figuring out how to do some specific task which we knew was possible but had no idea where to start with. Once in a while you could get so far down a rabbit hole of one specific thing with [Ctrl]+[Z]'s getting less and less effective it was more than once the case that members of the team were forced to completely nuke (delete) the project and start anew.</li>
+		</ul><br />
+		04)If we were ever granted the possibility of an infinite budget and timeline to complete another version of Cookbooker we would want to have many more cookies available. That and the creation and distribution of jobs earlier on in the development. Having a concrete place to stand and work allows for faster development as a team as you can get an intense knowledge about one specific aspect without worrying about the things that other members have covered.<br />
+		<br />
+		05)Some statistics:
+		<ul>
+			<li>Total Classes: 49
+				<ul>
+					<li>Testing: 15</li>
+					<li>Function: 34</li>
+				</ul>
+			</li>
+			<li>Total Methods: 208
+				<ul>
+					<li>Testing: 55</li>
+					<li>Function: 153</li>
+				</ul>
+			</li>
+			<li>Lines of Code: 3,889
+				<ul>
+					<li>Testing: 1,616</li>
+					<li>Function: 2,273</li>
+				</ul>
+			</li>
+		</ul>
+		<br />
+		06)One thing that was absolutely battering us throughout the project was the Pictures. They were constantly throwing up new error and just sending out too many curveballs. Even still with pictures implemented in a working state according to the architecture they're still quite dissapointing. Over the course of this development cycle they are most definetly one thing that has had a lot of technical debt put in and paid out.<br />
+		Another specific of the project that exploded in difficulty was the annotation system. It was originally thought that it would be a simple task, however after several days of pushing, prodding, tweaking and researching a system emerged akin to the original design spec. While not perfect it is functional and available for expansion.<br />
+		As mentioned earlier it took the team quite a while to get comfortable with the specifics of Android Studio.<br />
+		<br />
+		07)One thing that worked brilliantly across the app was our ability to reuse sections of the code. So for all views where it was required to give the user a list of recipes we were able to re-use the MainActivity, for the New/Copy/Edit recipe functions we were able to house them all under the same roof.<br />
+		However with all brilliance there must be some smelly code. One thing we aren't too happy with is the time required to load images, while it works, taking an image. Encoding it as a string and storing that string for future decoding operations is quite costly. Another thing we would have liked to see some more elegance in was the Database access, it really feels like we are using a shotgun approach to gathering things from the database where we try to cover every specific edge case possibility rather than having some single beautifully capable set of functions. But hey, it's readable as a kindergarten book so that makes future maintainability a real option.<br />
+		<br />
+		08)All of the bugs in our code are quite outstanding in their fields, than you for asking.<br />
+		<br />
+		09)One feature that really took off and blew away our expectations was the Shopping-List! It went from an idea of just a list with checkable items to a fully featured shopping list with integrated search functionality to allow users to search specifically for ingredients pertaining to what they have or will soon have available.<br />
+		Also our form validation in the Edit Recipe activity is on point. Rather than having everything open for user input and just displaying errors when things don't line up with what we expect to store, there was a proactive approach taken which forced users to do most of the error checking themselves.<br />
+		<br />
+		10)One specific additional technology that we were seemingly forced to use was a Base64 [en|de]coder in order to store pictures in a specific and robust protocol which allowed consistent loads and saves across devices.<br />
+		<br />
+		11)Lolnope<br />
+		<br />
+		12)Our project had a fairly strong vision from the get go and as such the only thing that really changed over the development lifespan was the recipe of the day feature. It was originally thought out to be a helpful little thing which suggested recipes based on past viewing and would only update every 24h. However after a few iterations what really came out of the woodwork was a Random Recipe button which simply selects a single recipe (randomly) from the available recipes in the database.<br />
+		<br />
+		13)For future projects it has become quite apparent the need for early planning. Having a strong vision and a good mental map of what the final product should sorta end up like allows for huge time savings downstream. This really helps reduce the technical debt associated with the project.<br />
+		14)As a team we have discovered that building software can be quite difficult. Working on a team allows for many cooks in the kitchen. Keeping our own areas clean and accessible for the other developers was a crucial constant over the development lifecycle for when it came down to needing to find specifics of a process or just bug hunting. We also found out that dividing tasks and sticking to those very closely allowed us to get as far as needed into a rabbit hole for the specifics without loosing track of any other parts that were potentially being worked on.<br />
+		<br />
+		<br />
+		"Write a clever solution in simple code, not a simple solution in clever code" - James<br />
+		"Think Less Live More.." - Ryan<br />
+		"" - Devon<br />
+		"Eh, it was fine." -Marshall 2019<br />
+		<br />
+	</div>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/base.js"></script>
+</body>
+
+</html>
